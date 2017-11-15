@@ -250,6 +250,15 @@ config TARGET_MX6SXSABREAUTO
         select DM_THERMAL
 	select BOARD_EARLY_INIT_F
 
+config TARGET_UDOO
+	bool "udoo"
+	select MX6SX
+	select SUPPORT_SPL
+	select DM
+	select DM_THERMAL
+	select BOARD_EARLY_INIT_F
+	select BOARD_LATE_INIT	
+
 config TARGET_MX6SX_14X14_ARM2
 	bool "mx6sx_14x14_arm2"
 	select MX6SX
@@ -493,6 +502,7 @@ source "board/freescale/mx6sxsabresd/Kconfig"
 source "board/freescale/mx6sxsabreauto/Kconfig"
 source "board/freescale/mx6sx_17x17_arm2/Kconfig"
 source "board/freescale/mx6sx_19x19_arm2/Kconfig"
+source "board/freescale/udoo/Kconfig"
 source "board/freescale/mx6ul_nxpu_iopb/Kconfig"
 source "board/freescale/mx6ul_14x14_evk/Kconfig"
 source "board/freescale/mx6ul_14x14_ddr3_arm2/Kconfig"
