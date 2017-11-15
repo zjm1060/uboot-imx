@@ -18,6 +18,7 @@
 #include "imx6_spl.h"
 #endif
 
+
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(32 * SZ_1M)
 
@@ -77,6 +78,7 @@
 #define CONFIG_EXTRA_ENV_SETTINGS \
 	CONFIG_MFG_ENV_SETTINGS \
 	UPDATE_M4_ENV \
+	"silent=0\0" \
 	"script=boot.scr\0" \
 	"image=zImage\0" \
 	"console=ttymxc0\0" \
