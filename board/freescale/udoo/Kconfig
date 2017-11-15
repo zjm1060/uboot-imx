@@ -1,0 +1,15 @@
+if TARGET_UDOO
+
+config SYS_BOARD
+	default "udoo"
+
+config SYS_VENDOR
+	default "freescale"
+
+config SYS_CONFIG_NAME
+	default "udoo"
+
+config MX6SXSABRESD_EMMC_REWORK
+	bool "Select for the board with eMMC rework"
+
+endif
